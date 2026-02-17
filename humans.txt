@@ -1,0 +1,11 @@
+/* TEAM */
+  Developer: Chamu Pages
+  Contact: chamu.pages@gmail.com
+  GitHub: chamudithalanka
+  Site: https://chamu.pages.dev
+
+/* TECH STACK */
+  HTML5, Tailwind CSS
+  Vanilla JavaScript
+  Canvas API
+  Cloudflare Pages
