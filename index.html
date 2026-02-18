@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="google-site-verification" content="SLzei9F_tmjk9EXsJMrnu4UIPQCjcYc_QV5tk8LoDrw" />
-    <title>High Impact Portfolio | Static Site Specialist</title>
+    <title>Chamu Pages | Static Site Specialist</title>
     <meta name="description"
         content="High-performance static sites for growth-focused businesses. Zero bloat, maximum speed. Built by Chamu Pages." />
     <link rel="canonical" href="https://chamu.pages.dev/" />
@@ -13,7 +13,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chamu.pages.dev/" />
-    <meta property="og:title" content="High Impact Portfolio | Static Site Specialist" />
+    <meta property="og:title" content="Chamu Pages | Static Site Specialist" />
     <meta property="og:description"
         content="High-performance static sites for growth-focused businesses. Zero bloat, maximum speed. Built by Chamu Pages." />
     <meta property="og:image" content="https://chamu.pages.dev/og-image.jpg" />
@@ -22,50 +22,21 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://chamu.pages.dev/" />
-    <meta property="twitter:title" content="High Impact Portfolio | Static Site Specialist" />
+    <meta property="twitter:title" content="Chamu Pages | Static Site Specialist" />
     <meta property="twitter:description"
         content="High-performance static sites for growth-focused businesses. Zero bloat, maximum speed. Built by Chamu Pages." />
     <meta property="twitter:image" content="https://chamu.pages.dev/og-image.jpg" />
 
     <meta name="theme-color" content="#1a1c18" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="assets/my-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/my-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/my-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/my-favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Chamu Pages" />
-    <link rel="manifest" href="/my-favicon/site.webmanifest" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#34d399",
-                        "background-light": "#f7f8f6",
-                        "background-dark": "#182210",
-                        "neutral-dark": "#1a1c18",
-                        "neutral-muted": "#4a4d46",
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
+    <link rel="manifest" href="assets/my-favicon/site.webmanifest" />
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -273,7 +244,7 @@
           "@id": "https://chamu.pages.dev/#organization",
           "name": "Chamu Pages",
           "url": "https://chamu.pages.dev/",
-          "logo": "https://chamu.pages.dev/my-favicon/web-app-manifest-512x512.png",
+          "logo": "https://chamu.pages.dev/assets/my-favicon/web-app-manifest-512x512.png",
           "image": "https://chamu.pages.dev/og-image.jpg",
           "description": "High-performance static sites for growth-focused businesses. Zero bloat, maximum speed. Built by Chamu Pages.",
           "address": {
@@ -296,7 +267,7 @@
     </script>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-neutral-dark dark:text-background-light antialiased"
+<body class="bg-background-light dark:bg-background-dark text-neutral-dark dark:text-white antialiased"
     style="cursor: none;">
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
@@ -305,7 +276,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <div class="w-10 h-10 rounded-lg overflow-hidden border-2 border-primary">
-                    <img src="Chamu Pages  - Static Website Specialist.webp" alt="Logo"
+                    <img src="assets/img/Chamu Pages  - Static Website Specialist.webp" alt="Logo"
                         class="w-full h-full object-cover" />
                 </div>
                 <span class="font-display font-800 text-xl tracking-tight uppercase italic">Chamu<span
@@ -318,117 +289,373 @@
                     <a class="hover:text-primary transition-colors" href="#work">Case Studies</a>
                     <a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
                     <a class="bg-[rgb(14,48,33)] text-white px-6 py-2.5 rounded font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(52,211,153,0.4)] transition-all"
-                        href="start.html">Start Project</a>
+                        href="#pricing">Start Project</a>
                 </div>
                 <!-- Theme toggle - visible on both mobile and desktop -->
-                <button id="theme-toggle"
+                <button id="theme-toggle" aria-label="Toggle Dark Mode"
                     class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 hover:scale-105 transition-all"
                     onclick="toggleTheme()">
-                    <span class="material-icons text-lg" id="theme-icon">dark_mode</span>
+                    <span class="text-lg inline-flex" id="theme-icon">
+                        <!-- Default to dark_mode icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="currentColor">
+                            <path
+                                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                        </svg>
+                    </span>
                 </button>
             </div>
         </div>
     </nav>
-    <header class="relative pt-20 pb-32 px-6 overflow-hidden noise-bg flex items-center" style="height: 100dvh;">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div class="z-10">
-                <span
-                    class="inline-block px-3 py-1 bg-primary/20 text-neutral-dark dark:text-white font-bold text-xs uppercase tracking-widest rounded mb-6">Results-Driven
-                    Design</span>
-                <h1 class="text-5xl md:text-7xl font-800 leading-[0.9] tracking-tighter mb-8">
-                    WEBSITES THAT <br />
-                    <span class="text-primary">TURN CLICKS</span> <br />
-                    INTO CLIENTS.
-                </h1>
-                <p class="text-base md:text-xl text-neutral-muted dark:text-white/70 max-w-lg mb-10 leading-relaxed">
-                    Stop losing revenue to slow, outdated websites. I build lightning-fast static sites designed for
-                    western business owners who demand growth.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a class="px-8 py-5 bg-primary text-neutral-dark text-base md:text-lg font-800 rounded flex items-center justify-center gap-3 hover:scale-105 transition-transform"
-                        href="#pricing">
-                        Start Project <span class="material-icons">arrow_forward</span>
-                    </a>
-                    <a class="px-8 py-5 border-2 border-neutral-dark dark:border-white text-base md:text-lg font-800 rounded flex items-center justify-center gap-3 hover:bg-neutral-dark hover:text-white hover:scale-105 transition-all"
-                        href="#work">
-                        VIEW WORK
-                    </a>
+    <main>
+        <header
+            class="relative pt-20 pb-32 px-6 overflow-hidden bg-white dark:bg-background-dark noise-bg flex items-center"
+            style="height: 100dvh;">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <span
+                        class="inline-block px-3 py-1 bg-primary/20 text-neutral-dark dark:text-white font-bold text-xs uppercase tracking-widest rounded mb-6">Results-Driven
+                        Design</span>
+                    <h1 class="text-5xl md:text-7xl font-800 leading-[0.9] tracking-tighter mb-8">
+                        WEBSITES THAT <br />
+                        <span class="text-primary">TURN CLICKS</span> <br />
+                        INTO CLIENTS.
+                    </h1>
+                    <p
+                        class="text-base md:text-xl text-neutral-muted dark:text-white/70 max-w-lg mb-10 leading-relaxed">
+                        Stop losing revenue to slow, outdated websites. I build lightning-fast static sites designed for
+                        western business owners who demand growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a class="px-8 py-5 bg-primary text-neutral-dark text-base md:text-lg font-800 rounded flex items-center justify-center gap-3 hover:scale-105 transition-transform"
+                            href="#pricing">
+                            Start Project <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                                </svg></span>
+                        </a>
+                        <a class="px-8 py-5 border-2 border-neutral-dark dark:border-white text-base md:text-lg font-800 rounded flex items-center justify-center gap-3 hover:bg-neutral-dark hover:text-white hover:scale-105 transition-all"
+                            href="#work">
+                            VIEW WORK
+                        </a>
+                    </div>
+                </div>
+                <div class="relative lg:h-[600px] hidden lg:flex items-center justify-center hero-float">
+                    <div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl"></div>
+                    <img class="relative z-10 w-full rounded-xl shadow-2xl border border-primary/20 object-cover aspect-video lg:aspect-auto h-full"
+                        alt="Modern high-performance business analytics dashboard on a screen"
+                        src="assets/img/Hero Image.webp" />
                 </div>
             </div>
-            <div class="relative lg:h-[600px] hidden lg:flex items-center justify-center hero-float">
-                <div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl"></div>
-                <img class="relative z-10 w-full rounded-xl shadow-2xl border border-primary/20 object-cover aspect-video lg:aspect-auto h-full"
-                    alt="Modern high-performance business analytics dashboard on a screen"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFBqvCfNfDxUIqGPVuYLGeg2BwUesL2VoHSLKLbE4F3Qp4bTEAai6OIJOSmGMC6Li5FSDzCK5-raf2mgdpljlEkBKUjnLn3aEW2-VEyBc1PLdbJsz5Jo5c2Ll9sP-jcx_eqvhQmq9g5finGqW1teb-R4nX-6mMGUnyj4Z5fL1iOnV3daCnPM2cDQkLjSfF6E8FLMUX0wSCl_HVDTKH4F8lkn8QNbA1R442sVrCBOIBbSaddVYrPZpDXiDvm1wsZxNZ_DKbEIrddyE" />
+        </header>
+        <section class="pt-52 pb-24 bg-neutral-dark text-white relative overflow-hidden" id="problem">
+            <!-- Background elements for visual interest -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-red-500/5 rounded-full blur-3xl"></div>
             </div>
-        </div>
-    </header>
-    <section class="py-24 bg-neutral-dark text-white warp-section" id="problem">
-        <canvas id="warp-problem"></canvas>
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mb-16 reveal from-bottom">
-                <h2 class="text-3xl md:text-5xl font-800 mb-6 tracking-tight">IS YOUR CURRENT SITE <span
-                        class="text-primary underline decoration-4 underline-offset-8">INVISIBLE?</span></h2>
-                <p class="text-base md:text-xl text-white/60">If your website isn't making you money, it's costing you
-                    money. Most
-                    "modern" sites fail western business standards.</p>
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-3xl mb-16 reveal from-bottom">
+                    <h2 class="text-3xl md:text-5xl font-800 mb-6 tracking-tight uppercase">
+                        THE SYMPTOMS OF <span
+                            class="text-red-500 underline decoration-red-500/50 decoration-4 underline-offset-8">FAILURE.</span>
+                    </h2>
+                    <p class="text-base md:text-xl text-white/50">Your current website isn't just a digital
+                        brochure—it's
+                        likely your biggest business liability. Most businesses are hemorrhaging revenue through these
+                        three
+                        fatal flaws.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10 stagger-children reveal">
+                    <div class="p-8 border border-red-500/10 rounded-xl bg-red-500/5 relative overflow-hidden group">
+
+                        <span class="text-red-500 text-5xl mb-6 inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                <path
+                                    d="M480-316.5q38-.5 56-27.5l224-336-336 224q-27 18-28.5 55t22.5 61q24 24 62 23.5Zm0-483.5q59 0 113.5 16.5T696-734l-76 48q-33-17-68.5-25.5T480-720q-133 0-226.5 93.5T160-400q0 42 11.5 83t32.5 77h552q23-38 33.5-79t10.5-85q0-36-8.5-70T766-540l48-76q30 47 47.5 100T880-406q1 57-13 109t-41 99q-11 18-30 28t-40 10H204q-21 0-40-10t-30-28q-26-45-40-95.5T80-400q0-83 31.5-155.5t86-127Q252-737 325-768.5T480-800Zm7 313Z" />
+                            </svg></span>
+                        <h3 class="text-xl md:text-2xl font-800 mb-4 tracking-tight uppercase text-red-500">Lethal Load
+                            Times</h3>
+                        <p class="text-white/60 mb-6 font-medium leading-relaxed">40% of users leave a site that takes
+                            more
+                            than 3 seconds to load.
+                            You're losing half your traffic before they even see your logo.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2"><span class="text-red-500 text-sm inline-flex"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                                    </svg></span> <span class="text-sm font-semibold opacity-80 ">High Bounce
+                                    Rates</span>
+                            </li>
+                            <li class="flex items-center gap-2"><span class="text-red-500 text-sm inline-flex"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                                    </svg></span> <span class="text-sm font-semibold opacity-80 ">Lost Sales
+                                    Opportunities</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-8 border border-red-500/10 rounded-xl bg-red-500/5 relative overflow-hidden group">
+
+                        <span class="text-red-500 text-5xl mb-6 inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em"
+                                fill="currentColor">
+                                <g>
+                                    <rect fill="none" height="24" width="24" />
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M15.5,14h-0.79l-0.28-0.27C15.41,12.59,16,11.11,16,9.5C16,5.91,13.09,3,9.5,3C6.08,3,3.28,5.64,3.03,9h2.02 C5.3,6.75,7.18,5,9.5,5C11.99,5,14,7.01,14,9.5S11.99,14,9.5,14c-0.17,0-0.33-0.03-0.5-0.05v2.02C9.17,15.99,9.33,16,9.5,16 c1.61,0,3.09-0.59,4.23-1.57L14,14.71v0.79l5,4.99L20.49,19L15.5,14z" />
+                                        <polygon
+                                            points="6.47,10.82 4,13.29 1.53,10.82 0.82,11.53 3.29,14 0.82,16.47 1.53,17.18 4,14.71 6.47,17.18 7.18,16.47 4.71,14 7.18,11.53" />
+                                    </g>
+                                </g>
+                            </svg></span>
+                        <h3 class="text-2xl font-800 mb-4 tracking-tight uppercase text-red-500">SEO Ghost Town</h3>
+                        <p class="text-white/60 mb-6 font-medium leading-relaxed">If Google can't find you, your
+                            customers
+                            won't either. Bloated code
+                            and poor architecture bury your business on page 10.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2"><span class="text-red-500 text-sm inline-flex"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                                    </svg></span> <span class="text-sm font-semibold opacity-80 ">No Organic
+                                    Traffic</span>
+                            </li>
+                            <li class="flex items-center gap-2"><span class="text-red-500 text-sm inline-flex"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                                    </svg></span> <span class="text-sm font-semibold opacity-80 ">Wasted Ad
+                                    Budget</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-8 border border-red-500/10 rounded-xl bg-red-500/5 relative overflow-hidden group">
+
+                        <span class="text-red-500 text-5xl mb-6 inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M13 8.2l-1-1-4 4-4-4-1 1 4 4-4 4 1 1 4-4 4 4 1-1-4-4 4-4zM19 1H9c-1.1 0-2 .9-2 2v3h2V4h10v16H9v-2H7v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z" />
+                            </svg></span>
+                        <h3 class="text-2xl font-800 mb-4 tracking-tight uppercase text-red-500">Broken Mobile UX</h3>
+                        <p class="text-white/60 mb-6 font-medium leading-relaxed">Over 60% of leads browse on mobile. If
+                            your site is hard to navigate
+                            on a phone, you're literally pushing clients to your competitors.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2"><span class="text-red-500 text-sm inline-flex"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                                    </svg></span> <span class="text-sm font-semibold opacity-80 ">Frustrated
+                                    Users</span>
+                            </li>
+                            <li class="flex items-center gap-2"><span class="text-red-500 text-sm inline-flex"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                                    </svg></span> <span class="text-sm font-semibold opacity-80 ">Poor Brand
+                                    Authority</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="grid md:grid-cols-3 gap-10 stagger-children reveal">
-                <div class="p-8 border border-white/10 rounded-xl hover:border-primary/50 transition-colors bg-white/5">
-                    <span class="material-icons text-primary text-5xl mb-6">speed</span>
-                    <h3 class="text-xl md:text-2xl font-800 mb-4 tracking-tight uppercase">Lethal Load Times</h3>
-                    <p class="text-white/60 mb-6">40% of users leave a site that takes more than 3 seconds to load.
-                        You're losing half your traffic before they even see your logo.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-2"><span
-                                class="material-icons text-primary text-sm">close</span> <span
-                                class="text-sm font-semibold">High Bounce Rates</span></li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-icons text-primary text-sm">close</span> <span
-                                class="text-sm font-semibold">Lost Sales Opportunities</span></li>
-                    </ul>
+        </section>
+        <section class="pt-24 pb-52 bg-neutral-dark text-white warp-section">
+            <canvas id="warp-problem"></canvas>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10 w-full reveal from-bottom">
+                <div class="max-w-3xl mb-16">
+                    <h2 class="text-4xl md:text-6xl font-800 tracking-tighter uppercase mb-6">THE <span
+                            class="text-primary">ANTIDOTE.</span></h2>
+                    <p class="text-base md:text-xl text-white/60">Forget complex frameworks and bloated page builders.
+                        We
+                        use a stripped-back, high-performance stack that delivers instant load times and perfect SEO
+                        scores.
+                    </p>
                 </div>
-                <div class="p-8 border border-white/10 rounded-xl hover:border-primary/50 transition-colors bg-white/5">
-                    <span class="material-icons text-primary text-5xl mb-6">search_off</span>
-                    <h3 class="text-2xl font-800 mb-4 tracking-tight uppercase">SEO Ghost Town</h3>
-                    <p class="text-white/60 mb-6">If Google can't find you, your customers won't either. Bloated code
-                        and poor architecture bury your business on page 10.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-2"><span
-                                class="material-icons text-primary text-sm">close</span> <span
-                                class="text-sm font-semibold">No Organic Traffic</span></li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-icons text-primary text-sm">close</span> <span
-                                class="text-sm font-semibold">Wasted Ad Budget</span></li>
-                    </ul>
-                </div>
-                <div class="p-8 border border-white/10 rounded-xl hover:border-primary/50 transition-colors bg-white/5">
-                    <span class="material-icons text-primary text-5xl mb-6">phonelink_erase</span>
-                    <h3 class="text-2xl font-800 mb-4 tracking-tight uppercase">Broken Mobile UX</h3>
-                    <p class="text-white/60 mb-6">Over 60% of leads browse on mobile. If your site is hard to navigate
-                        on a phone, you're literally pushing clients to your competitors.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-2"><span
-                                class="material-icons text-primary text-sm">close</span> <span
-                                class="text-sm font-semibold">Frustrated Users</span></li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-icons text-primary text-sm">close</span> <span
-                                class="text-sm font-semibold">Poor Brand Authority</span></li>
-                    </ul>
+
+
+                <div class="grid md:grid-cols-3 gap-8 stagger-children reveal w-full">
+                    <!-- Card 1 -->
+                    <div
+                        class="group p-8 rounded-2xl bg-[#222420] border border-primary/10 shadow-[0_0_20px_rgba(52,211,153,0.1)] hover:border-primary/30 hover:shadow-[0_0_30px_rgba(52,211,153,0.2)] transition-all duration-300 relative overflow-hidden flex flex-col h-full hover:-translate-y-2">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-primary border border-white/5 group-hover:bg-primary/10 transition-colors">
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                                    </svg></span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-3 text-white">Pure Code</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                            No bloated page builders. Just clean, hand-written HTML5 & CSS3 that browsers love and
+                            Google
+                            rewards.
+                        </p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-center gap-2 text-primary">
+                                <span class="text-sm inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                        <path
+                                            d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                    </svg></span>
+                                <span class="text-white/80 text-xs font-bold uppercase tracking-wider">100/100
+                                    Lighthouse</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-primary">
+                                <span class="text-sm inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                        <path
+                                            d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                    </svg></span>
+                                <span class="text-white/80 text-xs font-bold uppercase tracking-wider">Clean
+                                    Infrastructure</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto">
+                            <code
+                                class="text-xs font-mono text-primary bg-primary/10 px-3 py-1.5 rounded border border-primary/20">&lt;clean_markup /&gt;</code>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group p-8 rounded-2xl bg-[#222420] border border-primary/10 shadow-[0_0_20px_rgba(52,211,153,0.1)] hover:border-primary/30 hover:shadow-[0_0_30px_rgba(52,211,153,0.2)] transition-all duration-300 relative overflow-hidden flex flex-col h-full hover:-translate-y-2">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-primary border border-white/5 group-hover:bg-primary/10 transition-colors">
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M838-65 720-183v89h-80v-226h226v80h-90l118 118-56 57ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 20-2 40t-6 40h-82q5-20 7.5-40t2.5-40q0-20-2.5-40t-7.5-40H654q3 20 4.5 40t1.5 40q0 20-1.5 40t-4.5 40h-80q3-20 4.5-40t1.5-40q0-20-1.5-40t-4.5-40H386q-3 20-4.5 40t-1.5 40q0 20 1.5 40t4.5 40h134v80H404q12 43 31 82.5t45 75.5q20 0 40-2.5t40-4.5v82q-20 2-40 4.5T480-80ZM170-400h136q-3-20-4.5-40t-1.5-40q0-20 1.5-40t4.5-40H170q-5 20-7.5 40t-2.5 40q0 20 2.5 40t7.5 40Zm34-240h118q9-37 22.5-72.5T376-782q-55 18-99 54.5T204-640Zm172 462q-18-34-31.5-69.5T322-320H204q29 51 73 87.5t99 54.5Zm28-462h152q-12-43-31-82.5T480-798q-26 36-45 75.5T404-640Zm234 0h118q-29-51-73-87.5T584-782q18 34 31.5 69.5T638-640Z" />
+                                    </svg></span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-3 text-white">Edge Network</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                            Your site lives on a global CDN, serving content from the server closest to your customer
+                            for
+                            instant loading.
+                        </p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-center gap-2 text-primary">
+                                <span class="text-sm inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                        <path
+                                            d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                    </svg></span>
+                                <span class="text-white/80 text-xs font-bold uppercase tracking-wider">Global CDN
+                                    Network</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-primary">
+                                <span class="text-sm inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                        <path
+                                            d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                    </svg></span>
+                                <span class="text-white/80 text-xs font-bold uppercase tracking-wider">Reduced
+                                    Latency</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto">
+                            <code
+                                class="text-xs font-mono text-primary bg-primary/10 px-3 py-1.5 rounded border border-primary/20">● 15ms_latency</code>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="group p-8 rounded-2xl bg-[#222420] border border-primary/10 shadow-[0_0_20px_rgba(52,211,153,0.1)] hover:border-primary/30 hover:shadow-[0_0_30px_rgba(52,211,153,0.2)] transition-all duration-300 relative overflow-hidden flex flex-col h-full hover:-translate-y-2">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
+                        </div>
+
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-primary border border-white/5 group-hover:bg-primary/10 transition-colors">
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z" />
+                                    </svg></span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-3 text-white">AI-Ready</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                            Structured specifically for AI search engines (SGE). Future-proof your business as search
+                            evolves.
+                        </p>
+
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-center gap-2 text-primary">
+                                <span class="text-sm inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                        <path
+                                            d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                    </svg></span>
+                                <span class="text-white/80 text-xs font-bold uppercase tracking-wider">SGE
+                                    Optimized</span>
+                            </li>
+                            <li class="flex items-center gap-2 text-primary">
+                                <span class="text-sm inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                        <path
+                                            d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                    </svg></span>
+                                <span class="text-white/80 text-xs font-bold uppercase tracking-wider">Semantic
+                                    Markup</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto">
+                            <code
+                                class="text-xs font-mono text-primary bg-primary/10 px-3 py-1.5 rounded border border-primary/20">● schema_optimized</code>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="py-24 px-6 bg-background-light dark:bg-background-dark noise-bg" id="work">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal from-bottom">
-                <div class="max-w-2xl">
-                    <h2 class="text-3xl md:text-6xl font-800 tracking-tighter mb-4 uppercase italic">PROVEN <span
-                            class="text-primary">RESULTS.</span></h2>
-                    <p class="text-lg text-neutral-muted dark:text-white/60">No fluff. Just high-conversion static sites
-                        built for Western markets.</p>
-                </div>
-                <!-- <div class="flex gap-4">
+        </section>
+        <section class="py-24 px-6 bg-[#F2F2F2] dark:bg-surface-dark noise-bg" id="work">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal from-bottom">
+                    <div class="max-w-2xl">
+                        <h2 class="text-3xl md:text-6xl font-800 tracking-tighter mb-4 uppercase italic">PROVEN <span
+                                class="text-primary">RESULTS.</span></h2>
+                        <p class="text-lg text-neutral-muted dark:text-white/60">No fluff. Just high-conversion static
+                            sites
+                            built for Western markets.</p>
+                    </div>
+                    <!-- <div class="flex gap-4">
                     <button
                         class="w-12 h-12 rounded-full border border-neutral-dark/20 flex items-center justify-center hover:bg-primary hover:border-primary hover:scale-105 transition-all">
                         <span class="material-icons">chevron_left</span>
@@ -438,226 +665,445 @@
                         <span class="material-icons">chevron_right</span>
                     </button>
                 </div> -->
-            </div>
-            <div class="grid md:grid-cols-2 gap-8 stagger-children reveal">
-                <div
-                    class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
-                    <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
-                        loading="lazy" alt="Modern law firm office with professional aesthetic"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF7_XaTw771HRAznb3vxFJ8-gO3WHry883Kn7eowZHJjVQBS9gG0is43L3kuyGfIG1-dbOKlEyWliI3XXpBUGFX9DaRrHLi9lPWNtvFC026q5I0Ia8AUVydl1RBhGfA0vW7pPI6ZII_mIWYfO7BYXEONpw-8VZYYln6mGD-k5ZLgYOd1jhcPNzkcgV-XXnchEVJ6kMlkj8wk11kk3MHY1AvPGyNxt1WviSIGMi1i30TEGhtvAAwFMi-49T_Yt2hNJTiU6Y5ciXPMk" />
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 stagger-children reveal">
                     <div
-                        class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                        <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">Legal Services</span>
-                        <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">Sterling &amp;
-                            Associates</h3>
-                        <p
-                            class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
-                            Increased lead generation by 140% within 3 months of redesign.</p>
-                        <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY <span
-                                class="material-icons">north_east</span></a>
-                    </div>
-                </div>
-                <div
-                    class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
-                    <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
-                        loading="lazy" alt="Sleek high-end tech workspace with green accents"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA49HDEtyvdyco8o1bbhvU2nlxhMGERFsDZbswLC81tik4WmAslq8Lq8zuMyXcYla56XB5IBGLT50x8rHhOn88NhLBj648KqMXd-Ne0XwVz0QVCOXPUKxu4tl-L8qsx2Ds7W8TMhets1df2w7pPI6ZII_mIWYfO7BYXEONpw-8VZYYln6mGD-k5ZLgYOd1jhcPNzkcgV-XXnchEVJ6kMlkj8wk11kk3MHY1AvPGyNxt1WviSIGMi1i30TEGhtvAAwFMi-49T_Yt2hNJTiU6Y5ciXPMk" />
-                    <div
-                        class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                        <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">SaaS &amp;
-                            Fintech</span>
-                        <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">NovaStream Platform</h3>
-                        <p
-                            class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
-                            Achieved sub-second load times globally using Next.js static export.</p>
-                        <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY <span
-                                class="material-icons">north_east</span></a>
-                    </div>
-                </div>
-                <div
-                    class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
-                    <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
-                        loading="lazy" alt="Luxury real estate property with modern design"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX27v_vXbibMbZVhhHf2TnSgL1Yu0QeEJvScM6qcvm3mo1DORA1UNl5_C4Nb5JP5dZAUJ0GEFwN5TMExe78YGwcUIWioJotzdO7xEKhdWBOCBtbWswjW7B_292tjJByT6xknh5JfT1AFyc6barUhmux1GNYqLTdp4CGLrsvJ43VyNlncCvJf_4z8jiPcmNNRzEr7gIKqUAPxjZsrQE36jOqZW4zTSHns01R2jb4HLA6ZFy3Vo6VZJ2V4r18Tnn1eJjZ-7hOxcJdVU" />
-                    <div
-                        class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                        <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">Real Estate</span>
-                        <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">Vanguard Realty</h3>
-                        <p
-                            class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
-                            Integrated MLS live data with static speed for maximum SEO impact.</p>
-                        <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY <span
-                                class="material-icons">north_east</span></a>
-                    </div>
-                </div>
-                <div
-                    class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
-                    <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
-                        loading="lazy" alt="Professional home services team working"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-q6cagCRxJ1Nd-jpd31z8XAU7BoaNL7F6TSOX4W_xp1PWdF09v5YUr_rt-ktOacN0lc0p6CBdiY6IgYWht2kHaolo_ZEvWmTdeOc-uKV9fMse0HaIhqlcpyyIG32Lnr8FyzyIxbxmAMlX9l6OTiGCOwAjchhnqVr1q7bbjALN-EzzCRcQw3OYOIvFmCuHRICTeQb_wMH9BVZAE4vrq1JWb2KBv2PDNtZbr-vEZszi8spE8yRiTBkqcCHdlCNPZ8Y8foXYqWZbvAQ" />
-                    <div
-                        class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                        <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">Home Services</span>
-                        <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">Elite HVAC Solutions
-                        </h3>
-                        <p
-                            class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
-                            Automated booking flow reduced manual admin work by 30 hours weekly.</p>
-                        <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY <span
-                                class="material-icons">north_east</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-24 noise-bg" id="pricing">
-        <div class="max-w-7xl mx-auto px-6 reveal from-bottom">
-            <div
-                class="bg-[#0b261a] p-8 md:p-12 rounded-2xl flex flex-col lg:flex-row items-center gap-16 overflow-hidden relative">
-                <div class="absolute inset-0 opacity-10 pointer-events-none">
-                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
-                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"></path>
-                            </pattern>
-                        </defs>
-                        <rect fill="url(#grid)" height="100%" width="100%"></rect>
-                    </svg>
-                </div>
-                <div class="flex-1 relative z-10">
-                    <h2 class="text-3xl md:text-7xl font-800 tracking-tighter text-white leading-none mb-8">
-                        READY TO <br /><span class="text-primary">DOMINATE?</span>
-                    </h2>
-                    <p class="text-base md:text-xl text-white/80 dark:text-white/70 font-medium max-w-lg mb-12">
-                        One simple package. Zero hidden fees. High-performance results delivered in 14 days or less.
-                    </p>
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div class="flex items-start gap-3">
-                            <span class="material-icons text-primary">check_circle</span>
-                            <div>
-                                <h4 class="font-800 text-white">Custom Design</h4>
-                                <p class="text-white/60 text-sm">Tailored to your brand.</p>
-                            </div>
+                        class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
+                            loading="lazy" alt="Modern law firm office with professional aesthetic"
+                            src="Image URL Placeholder" />
+                        <div
+                            class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">Legal
+                                Services</span>
+                            <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">Sterling &amp;
+                                Associates</h3>
+                            <p
+                                class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
+                                Increased lead generation by 140% within 3 months of redesign.</p>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                    </svg></span></a>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <span class="material-icons text-primary">check_circle</span>
-                            <div>
-                                <h4 class="font-800 text-white">Static Performance</h4>
-                                <p class="text-white/60 text-sm">100/100 Lighthouse score.</p>
-                            </div>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
+                            loading="lazy" alt="Sleek high-end tech workspace with green accents"
+                            src="Image URL Placeholder" />
+                        <div
+                            class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">SaaS &amp;
+                                Fintech</span>
+                            <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">NovaStream Platform
+                            </h3>
+                            <p
+                                class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
+                                Achieved sub-second load times globally using Next.js static export.</p>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                    </svg></span></a>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <span class="material-icons text-primary">check_circle</span>
-                            <div>
-                                <h4 class="font-800 text-white">SEO Optimized</h4>
-                                <p class="text-white/60 text-sm">Built-in visibility.</p>
-                            </div>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
+                            loading="lazy" alt="Luxury real estate property with modern design"
+                            src="Image URL Placeholder" />
+                        <div
+                            class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">Real
+                                Estate</span>
+                            <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">Vanguard Realty</h3>
+                            <p
+                                class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
+                                Integrated MLS live data with static speed for maximum SEO impact.</p>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                    </svg></span></a>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <span class="material-icons text-primary">check_circle</span>
-                            <div>
-                                <h4 class="font-800 text-white">24/7 Support</h4>
-                                <p class="text-white/60 text-sm">Always here to help.</p>
-                            </div>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-xl bg-neutral-dark portfolio-card aspect-[4/3] md:aspect-[16/10]">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:opacity-40 transition-all duration-500 grayscale group-hover:grayscale-0"
+                            loading="lazy" alt="Professional home services team working" src="Image URL Placeholder" />
+                        <div
+                            class="absolute inset-0 p-10 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <span class="text-primary font-800 text-sm tracking-widest uppercase mb-2">Home
+                                Services</span>
+                            <h3 class="text-xl md:text-3xl text-white font-800 tracking-tight mb-4">Elite HVAC Solutions
+                            </h3>
+                            <p
+                                class="text-white/80 max-w-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
+                                Automated booking flow reduced manual admin work by 30 hours weekly.</p>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">VIEW CASE STUDY
+                                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                    </svg></span></a>
                         </div>
                     </div>
                 </div>
-                <div class="w-full lg:w-[400px] bg-neutral-dark p-10 rounded-xl shadow-2xl relative z-10 text-center">
-                    <p class="text-primary font-800 tracking-widest uppercase mb-4">Premium Performance</p>
-                    <div class="flex items-center justify-center gap-1 mb-8">
-                        <span class="text-white/60 text-2xl font-800">$</span>
-                        <span class="text-white text-5xl md:text-7xl font-800">2,499</span>
+            </div>
+        </section>
+        <section
+            class="py-24 bg-white dark:bg-background-dark text-neutral-dark dark:text-white relative overflow-hidden"
+            id="protocol">
+            <div class="max-w-7xl mx-auto px-6 reveal from-bottom">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+                    <div class="max-w-2xl">
+                        <h2
+                            class="text-4xl md:text-6xl font-800 tracking-tighter uppercase text-neutral-dark dark:text-white mb-6">
+                            THE
+                            <span class="text-primary">PROTOCOL.</span>
+                        </h2>
+                        <p class="text-lg text-neutral-muted dark:text-white/70 max-w-xl font-medium">We don't do
+                            endless
+                            Zoom meetings. We
+                            build. Here is the streamlined workflow that gets you live in 14 days.</p>
                     </div>
-                    <p class="text-white/60 mb-10 text-sm leading-relaxed hidden md:block">Everything you need for a
-                        market-leading
-                        digital presence.</p>
-                    <a href="start.html"
-                        class="w-full bg-primary py-5 rounded font-800 text-neutral-dark text-lg hover:scale-105 transition-transform flex items-center justify-center">
-                        Start Project
-                    </a>
-                    <p class="mt-6 text-white/40 text-xs font-medium uppercase tracking-widest italic">3 slots remaining
-                        for Q4</p>
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 px-5 py-3 bg-primary/20 text-neutral-dark dark:text-white rounded text-xs font-bold tracking-widest uppercase">
+                        <span class="text-sm inline-flex" style="font-size: 16px;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em"
+                                fill="currentColor">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M13 8.2l-1-1-4 4-4-4-1 1 4 4-4 4 1 1 4-4 4 4 1-1-4-4 4-4zM19 1H9c-1.1 0-2 .9-2 2v3h2V4h10v16H9v-2H7v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z" />
+                            </svg></span>
+                        NO CALLS. JUST RESULTS.
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-24 bg-background-light dark:bg-background-dark noise-bg" id="faq">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-16 reveal from-bottom">
-                <h2 class="text-3xl md:text-5xl font-800 tracking-tighter uppercase italic italic">COMMON <span
-                        class="text-primary">QUESTIONS.</span></h2>
-            </div>
-            <div class="space-y-4 stagger-children reveal">
-                <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
-                    <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
-                        <span class="text-base md:text-xl font-800 tracking-tight">What exactly is a static site?</span>
-                        <span
-                            class="material-icons faq-icon text-primary transition-transform duration-300">expand_more</span>
-                    </summary>
-                    <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
-                        Static sites are pre-rendered websites that don't rely on complex databases to load. This means
-                        they are incredibly fast, more secure, and cheaper to host than traditional WordPress sites.
-                    </div>
-                </details>
-                <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
-                    <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
-                        <span class="text-base md:text-xl font-800 tracking-tight">How long does the process
-                            take?</span>
-                        <span
-                            class="material-icons faq-icon text-primary transition-transform duration-300">expand_more</span>
-                    </summary>
-                    <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
-                        I specialize in high-speed delivery. Most projects are completed within 10 to 14 days, from
-                        initial strategy call to final deployment.
-                    </div>
-                </details>
-                <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
-                    <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
-                        <span class="text-base md:text-xl font-800 tracking-tight">Will I be able to edit the content
-                            myself?</span>
-                        <span
-                            class="material-icons faq-icon text-primary transition-transform duration-300">expand_more</span>
-                    </summary>
-                    <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
-                        Yes. I integrate Headless CMS solutions that allow you to update text and images as easily as
-                        writing an email, without any risk of breaking the site's code.
-                    </div>
-                </details>
-                <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
-                    <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
-                        <span class="text-base md:text-xl font-800 tracking-tight">Do you offer ongoing support?</span>
-                        <span
-                            class="material-icons faq-icon text-primary transition-transform duration-300">expand_more</span>
-                    </summary>
-                    <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
-                        Every project includes 30 days of post-launch support. I also offer maintenance packages for
-                        business owners who want a completely hands-off digital presence.
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
 
-    <section class="pb-16 bg-background-light dark:bg-background-dark noise-bg">
-        <div class="max-w-4xl mx-auto px-6 reveal from-bottom">
-            <div
-                class="bg-white dark:bg-white/5 p-8 rounded-2xl border border-neutral-dark/5 dark:border-white/5 flex flex-col md:flex-row items-center gap-8">
-                <div class="w-24 h-24 flex-shrink-0 rounded-full overflow-hidden border-2 border-primary p-1">
-                    <img class="w-full h-full object-cover rounded-full" loading="lazy"
-                        alt="Professional headshot of the developer"
-                        src="Chamu Pages  - Static Website Specialist.webp" />
-                </div>
-                <div class="flex-1 text-center md:text-left">
-                    <h4 class="text-sm font-800 uppercase tracking-widest text-primary mb-2">The human behind the code
-                    </h4>
-                    <p class="text-lg text-neutral-muted dark:text-white/70 leading-relaxed italic">
-                        I'm a specialist who believes performance is a business requirement, not a luxury. I bridge the
-                        gap between technical excellence and real-world revenue goals for western businesses.
-                    </p>
+                <div class="grid md:grid-cols-3 gap-8 relative">
+                    <!-- Connecting line for desktop -->
+                    <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-[2px] bg-neutral-100 z-0">
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div
+                        class="bg-background-light dark:bg-surface-dark p-8 rounded-2xl border border-neutral-200 dark:border-white/10 relative z-10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="w-10 h-10 bg-neutral-dark text-white rounded-full flex items-center justify-center font-bold mb-6 text-lg relative z-10 ring-8 ring-white dark:ring-surface-dark">
+                            1</div>
+                        <h3 class="text-xl font-800 text-neutral-dark dark:text-white mb-1">The Blueprint</h3>
+                        <p class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-4">ASYNC INTAKE</p>
+                        <p class="text-neutral-600 dark:text-white/70 text-sm leading-relaxed">
+                            Fill out our detailed intake form. We gather your assets, brand voice, and goals without
+                            wasting
+                            a minute on scheduling.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div
+                        class="bg-background-light dark:bg-surface-dark p-8 rounded-2xl border border-neutral-200 dark:border-white/10 relative z-10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="w-10 h-10 bg-primary text-neutral-dark rounded-full flex items-center justify-center font-bold mb-6 text-lg relative z-10 ring-8 ring-white dark:ring-surface-dark">
+                            2</div>
+                        <h3 class="text-xl font-800 text-neutral-dark dark:text-white mb-1">The Build</h3>
+                        <p class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-4">DEEP FOCUS</p>
+                        <p class="text-neutral-600 dark:text-white/70 text-sm leading-relaxed">
+                            We go dark for 10 days. No distractions. Just pure coding and design implementation to craft
+                            your high-performance asset.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div
+                        class="bg-background-light dark:bg-surface-dark p-8 rounded-2xl border border-neutral-200 dark:border-white/10 relative z-10 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="w-10 h-10 bg-neutral-dark text-white rounded-full flex items-center justify-center font-bold mb-6 text-lg relative z-10 ring-8 ring-white dark:ring-surface-dark">
+                            3</div>
+                        <h3 class="text-xl font-800 text-neutral-dark dark:text-white mb-1">The Reveal</h3>
+                        <p class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-4">LOOM DEMO</p>
+                        <p class="text-neutral-600 dark:text-white/70 text-sm leading-relaxed">
+                            You receive a comprehensive Loom video walking you through your new site, explaining the
+                            strategy and features.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="py-24 bg-white dark:bg-background-dark noise-bg" id="pricing">
+            <div class="max-w-7xl mx-auto px-0 md:px-6 reveal from-bottom">
+                <div
+                    class="bg-[#0b261a] p-8 md:p-12 rounded-none md:rounded-2xl flex flex-col gap-16 overflow-hidden relative">
+                    <div class="absolute inset-0 opacity-10 pointer-events-none"
+                        style="-webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 60%); mask-image: linear-gradient(to bottom, black 30%, transparent 60%);">
+                        <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
+                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"></path>
+                                </pattern>
+                            </defs>
+                            <rect fill="url(#grid)" height="100%" width="100%"></rect>
+                        </svg>
+                    </div>
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none"
+                        style="-webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 60%); mask-image: linear-gradient(to bottom, black 30%, transparent 60%);">
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 relative z-10 w-full mb-16">
+                        <div class="flex-1">
+                            <h2 class="text-3xl md:text-7xl font-800 tracking-tighter text-white leading-none mb-8">
+                                READY TO <br /><span class="text-primary">DOMINATE?</span>
+                            </h2>
+                            <p class="text-base md:text-xl text-white/80 dark:text-white/70 font-medium max-w-lg mb-12">
+                                One simple package. Zero hidden fees. High-performance results delivered in 14 days or
+                                less.
+                            </p>
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                            <path
+                                                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                        </svg></span>
+                                    <div>
+                                        <h3 class="font-800 text-white">Custom Design</h3>
+                                        <p class="text-white/60 text-sm">Tailored to your brand.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                            <path
+                                                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                        </svg></span>
+                                    <div>
+                                        <h3 class="font-800 text-white">Static Performance</h3>
+                                        <p class="text-white/60 text-sm">100/100 Lighthouse score.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                            <path
+                                                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                        </svg></span>
+                                    <div>
+                                        <h3 class="font-800 text-white">SEO Optimized</h3>
+                                        <p class="text-white/60 text-sm">Built-in visibility.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                            <path
+                                                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                                        </svg></span>
+                                    <div>
+                                        <h3 class="font-800 text-white">24/7 Support</h3>
+                                        <p class="text-white/60 text-sm">Always here to help.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full lg:w-[400px] bg-neutral-dark p-10 rounded-xl shadow-2xl text-center border border-white/5">
+                            <p class="text-primary font-800 tracking-widest uppercase mb-4">Premium Performance</p>
+                            <div class="flex items-center justify-center gap-1 mb-8">
+                                <span class="text-white/60 text-2xl font-800">$</span>
+                                <span class="text-white text-5xl md:text-7xl font-800">699</span>
+                            </div>
+                            <p class="text-white/60 text-sm leading-relaxed hidden md:block">Everything you need for a
+                                market-leading digital presence.</p>
+                            <p class="mt-6 text-white/40 text-xs font-medium uppercase tracking-widest italic">3 slots
+                                remaining for Q1</p>
+                        </div>
+                    </div>
+
+                    <!-- Premium Add-ons Section -->
+                    <div class="relative z-10 w-full border-t border-white/10 pt-12">
+                        <h3 class="text-xl font-bold text-white mb-8 flex items-center gap-2">
+                            <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                    <path
+                                        d="M352-120H200q-33 0-56.5-23.5T120-200v-152q48 0 84-30.5t36-77.5q0-47-36-77.5T120-568v-152q0-33 23.5-56.5T200-800h160q0-42 29-71t71-29q42 0 71 29t29 71h160q33 0 56.5 23.5T800-720v160q42 0 71 29t29 71q0 42-29 71t-71 29v160q0 33-23.5 56.5T720-120H568q0-50-31.5-85T460-240q-45 0-76.5 35T352-120Z" />
+                                </svg></span> Premium Add-ons
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-4 mb-16">
+                            <!-- Add-on Items -->
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">CMS Integration</span>
+                                <span class="text-primary font-bold">$399</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">CRM / Database Integration</span>
+                                <span class="text-primary font-bold text-right">Starts at <br
+                                        class="md:hidden" />$499</span>
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Booking System</span>
+                                <span class="text-primary font-bold">$199</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Per extra page</span>
+                                <span class="text-primary font-bold">$120</span>
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Payment Gateway</span>
+                                <span class="text-primary font-bold">$149</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Custom AI Images</span>
+                                <span class="text-primary font-bold">$100 / pack</span>
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Privacy Analytics</span>
+                                <span class="text-primary font-bold">$129</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Migration to Generic Host</span>
+                                <span class="text-primary font-bold">$250</span>
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Newsletter Setup</span>
+                                <span class="text-primary font-bold">$149</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-neutral-dark/40 rounded-lg border border-white/5 hover:border-primary/30 transition-colors">
+                                <span class="text-white font-medium">Live Chat Widget</span>
+                                <span class="text-primary font-bold">$99</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col items-center gap-4 max-w-2xl mx-auto">
+                            <a href="start.html"
+                                class="w-full bg-primary py-4 rounded font-800 text-neutral-dark text-xl hover:scale-[1.02] transition-transform text-center shadow-[0_0_30px_rgba(52,211,153,0.3)]">
+                                START YOUR PROJECT NOW
+                            </a>
+                            <a href="#contact"
+                                class="w-full py-4 rounded font-bold text-white/50 text-sm hover:text-white border border-white/10 hover:border-white/30 transition-all text-center">
+                                I have no idea (Let's chat)
+                            </a>
+                            <p class="text-white/40 text-xs mt-2 text-center">Includes free consultation to discuss your
+                                specific needs and add-ons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white dark:bg-background-dark noise-bg" id="faq">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16 reveal from-bottom">
+                    <h2 class="text-3xl md:text-5xl font-800 tracking-tighter uppercase italic italic">COMMON <span
+                            class="text-primary">QUESTIONS.</span></h2>
+                </div>
+                <div class="space-y-4 stagger-children reveal">
+                    <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
+                        <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
+                            <span class="text-base md:text-xl font-800 tracking-tight">What exactly is a static
+                                site?</span>
+                            <span class="faq-icon text-primary transition-transform duration-300 inline-flex"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                </svg></span>
+                        </summary>
+                        <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
+                            Static sites are pre-rendered websites that don't rely on complex databases to load. This
+                            means
+                            they are incredibly fast, more secure, and cheaper to host than traditional WordPress sites.
+                        </div>
+                    </details>
+                    <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
+                        <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
+                            <span class="text-base md:text-xl font-800 tracking-tight">How long does the process
+                                take?</span>
+                            <span class="faq-icon text-primary transition-transform duration-300 inline-flex"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                </svg></span>
+                        </summary>
+                        <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
+                            I specialize in high-speed delivery. Most projects are completed within 10 to 14 days, from
+                            initial strategy call to final deployment.
+                        </div>
+                    </details>
+                    <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
+                        <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
+                            <span class="text-base md:text-xl font-800 tracking-tight">Will I be able to edit the
+                                content
+                                myself?</span>
+                            <span class="faq-icon text-primary transition-transform duration-300 inline-flex"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                </svg></span>
+                        </summary>
+                        <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
+                            Yes. I integrate Headless CMS solutions that allow you to update text and images as easily
+                            as
+                            writing an email, without any risk of breaking the site's code.
+                        </div>
+                    </details>
+                    <details class="faq-details group border-b border-neutral-dark/10 dark:border-white/10">
+                        <summary class="flex justify-between items-center py-6 cursor-pointer list-none">
+                            <span class="text-base md:text-xl font-800 tracking-tight">Do you offer ongoing
+                                support?</span>
+                            <span class="faq-icon text-primary transition-transform duration-300 inline-flex"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="currentColor">
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                </svg></span>
+                        </summary>
+                        <div class="pb-8 text-neutral-muted dark:text-white/60 text-lg leading-relaxed">
+                            Every project includes 30 days of post-launch support. I also offer maintenance packages for
+                            business owners who want a completely hands-off digital presence.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-16 bg-white dark:bg-background-dark noise-bg">
+            <div class="max-w-4xl mx-auto px-6 reveal from-bottom">
+                <div
+                    class="bg-white dark:bg-surface-dark p-8 rounded-2xl border border-neutral-dark/5 dark:border-white/5 flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-24 h-24 flex-shrink-0 rounded-full overflow-hidden border-2 border-primary p-1">
+                        <img class="w-full h-full object-cover rounded-full" loading="lazy"
+                            alt="Professional headshot of the developer"
+                            src="assets/img/Chamu Pages  - Static Website Specialist.webp" />
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-sm font-800 uppercase tracking-widest text-primary mb-2">The human behind the
+                            code
+                        </h2>
+                        <p class="text-lg text-neutral-muted dark:text-white/70 leading-relaxed italic">
+                            I'm a specialist who believes performance is a business requirement, not a luxury. I bridge
+                            the
+                            gap between technical excellence and real-world revenue goals for western businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="bg-neutral-dark pt-24 pb-12 text-white border-t border-white/5 warp-section" id="contact">
         <canvas id="warp-footer"></canvas>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -672,16 +1118,24 @@
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-primary rounded flex items-center justify-center">
-                                <span class="material-icons text-neutral-dark">mail</span>
+                                <span class="text-neutral-dark inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
+                                    </svg></span>
                             </div>
                             <span class="text-lg font-bold">chamu.pages@gmail.com</span>
                         </div>
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center border border-primary/30">
-                                <span class="material-icons text-primary">code</span>
+                                <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                                    </svg></span>
                             </div>
-                            <a href="https://github.com/chamu-pages" target="_blank"
+                            <a href="https://github.com/chamu-pages" target="_blank" rel="noopener noreferrer"
                                 class="text-lg font-bold hover:text-primary transition-colors">github.com/chamu-pages</a>
                         </div>
                     </div>
@@ -689,7 +1143,11 @@
                 <div id="form-success"
                     class="hidden h-full flex flex-col items-center justify-center text-center py-12 space-y-4">
                     <div class="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mb-4">
-                        <span class="material-icons text-emerald-500 text-3xl">check_circle</span>
+                        <span class="text-emerald-500 text-3xl inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor">
+                                <path
+                                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                            </svg></span>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Message Received!</h3>
                     <p class="text-white/60">I'll get back to you soon.</p>
@@ -743,15 +1201,15 @@
                 <div class="w-full flex flex-col md:flex-row justify-between items-center gap-4">
                     <div class="flex items-center gap-2">
                         <div class="w-8 h-8 rounded-lg overflow-hidden border-2 border-primary">
-                            <img src="Chamu Pages  - Static Website Specialist.webp" alt="Logo" loading="lazy"
-                                class="w-full h-full object-cover" />
+                            <img src="assets/img/Chamu Pages  - Static Website Specialist.webp" alt="Logo"
+                                loading="lazy" class="w-full h-full object-cover" />
                         </div>
                         <span class="font-display font-800 text-sm tracking-tight uppercase italic">Chamu<span
                                 class="text-primary"> Pages</span></span>
                     </div>
                     <div class="flex flex-col items-center md:items-end gap-2">
                         <div class="flex items-center gap-2">
-                            <a href="https://github.com/chamudithalanka" target="_blank"
+                            <a href="https://github.com/chamu-pages/portfolio" target="_blank" rel="noopener noreferrer"
                                 class="text-sm text-white/50 hover:text-primary transition-colors">Source</a>
                             <span class="text-white/30">·</span>
                             <button id="edit-toggle"
@@ -800,7 +1258,7 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         revealEls.forEach(el => revealObserver.observe(el));
 
-        // Hyperspace Warp Tunnel Effect — boosted
+        // Hyperspace Warp Tunnel Effect — Optimized (Battery + Retina)
         function initWarp(canvasId) {
             const canvas = document.getElementById(canvasId);
             if (!canvas) return;
@@ -808,10 +1266,25 @@
             let stars = [];
             const STAR_COUNT = 200;
             let w, h, cx, cy;
+            let rafId;
+            let isAnimating = false;
 
+            // Handle Retina/HiDPI screens
             function resize() {
-                w = canvas.width = canvas.parentElement.offsetWidth;
-                h = canvas.height = canvas.parentElement.offsetHeight;
+                const dpr = window.devicePixelRatio || 1;
+                // Get the CSS size of the parent
+                const rect = canvas.parentElement.getBoundingClientRect();
+
+                // Set actual canvas size (integers)
+                canvas.width = rect.width * dpr;
+                canvas.height = rect.height * dpr;
+
+                // Scale context to ensure drawing operations match CSS pixels
+                ctx.scale(dpr, dpr);
+
+                // Internal logical width/height for calculations (CSS pixels)
+                w = rect.width;
+                h = rect.height;
                 cx = w / 2;
                 cy = h / 2;
             }
@@ -834,8 +1307,12 @@
             }
 
             function draw() {
-                ctx.fillStyle = 'rgba(26, 28, 24, 0.12)';
+                if (!isAnimating) return;
+
+                // Clear using logical dimensions
+                ctx.fillStyle = 'rgba(26, 28, 24, 0.2)'; // Increased opacity for trail reduction
                 ctx.fillRect(0, 0, w, h);
+
                 for (let s of stars) {
                     s.pz = s.z;
                     s.z -= 6;
@@ -850,7 +1327,8 @@
                     let px = (s.x / s.pz) * cx + cx;
                     let py = (s.y / s.pz) * cy + cy;
                     let life = 1 - s.z / 800;
-                    let size = life * 2;
+                    let size = life * 2; // Size in CSS pixels
+
                     ctx.beginPath();
                     ctx.moveTo(px, py);
                     ctx.lineTo(sx, sy);
@@ -859,12 +1337,32 @@
                     ctx.lineCap = 'round';
                     ctx.stroke();
                 }
-                requestAnimationFrame(draw);
+                rafId = requestAnimationFrame(draw);
             }
 
-            window.addEventListener('resize', resize);
+            // Observer to pause when off-screen
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!isAnimating) {
+                            isAnimating = true;
+                            resize(); // Ensure size is correct on reappearance
+                            draw();
+                        }
+                    } else {
+                        isAnimating = false;
+                        if (rafId) cancelAnimationFrame(rafId);
+                    }
+                });
+            }, { threshold: 0 });
+
+            observer.observe(canvas.parentElement);
+
+            window.addEventListener('resize', () => {
+                resize();
+                init(); // Re-scatter stars on resize
+            });
             init();
-            draw();
         }
 
         initWarp('warp-problem');
@@ -904,69 +1402,6 @@
             });
         });
 
-        // Text editing is now toggled via the footer "See Magic" button
+</body >
 
-        // Contact Form AJAX Handling
-        const form = document.getElementById('contact-form');
-        const successMessage = document.getElementById('form-success');
-        const submitButton = document.getElementById('form-submit');
-
-        if (form) {
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const formData = new FormData(form);
-                const object = Object.fromEntries(formData);
-                const json = JSON.stringify(object);
-
-                submitButton.innerHTML = "SENDING...";
-                submitButton.disabled = true;
-
-                fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: json
-                })
-                    .then(async (response) => {
-                        let json = await response.json();
-                        if (response.status == 200) {
-                            form.style.display = 'none';
-                            successMessage.classList.remove('hidden');
-                        } else {
-                            console.log(response);
-                            submitButton.innerHTML = "TRY AGAIN";
-                            submitButton.disabled = false;
-                            alert(json.message);
-                        }
-                    })
-                    .catch(error => {
-                        console.log(error);
-                        submitButton.innerHTML = "TRY AGAIN";
-                        submitButton.disabled = false;
-                        alert('Something went wrong!');
-                    });
-            });
-        }
-    </script>
-    <script>
-        // Dark/Light Theme Toggle
-        function toggleTheme() {
-            document.documentElement.classList.toggle('dark');
-            const isDark = document.documentElement.classList.contains('dark');
-            document.getElementById('theme-icon').textContent = isDark ? 'light_mode' : 'dark_mode';
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        }
-        // Apply saved theme on load
-        (function () {
-            const saved = localStorage.getItem('theme');
-            if (saved === 'dark') {
-                document.documentElement.classList.add('dark');
-                document.getElementById('theme-icon').textContent = 'light_mode';
-            }
-        })();
-    </script>
-</body>
-
-</html>
+</html >
