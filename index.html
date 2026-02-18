@@ -78,12 +78,15 @@
         class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-10 h-10 rounded-lg overflow-hidden border-2 border-primary">
-                    <img src="assets/img/Chamu Pages  - Static Website Specialist.webp" alt="Logo"
-                        class="w-full h-full object-cover" />
-                </div>
-                <span class="font-display font-800 text-xl tracking-tight uppercase italic">Chamu<span
-                        class="text-primary"> Pages</span></span>
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div
+                        class="w-10 h-10 rounded-lg overflow-hidden border-2 border-primary group-hover:scale-105 transition-transform">
+                        <img src="assets/img/Chamu Pages  - Static Website Specialist.webp" alt="Logo"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <span class="font-display font-800 text-xl tracking-tight uppercase italic">Chamu<span
+                            class="text-primary"> Pages</span></span>
+                </a>
             </div>
             <div class="flex items-center gap-4">
                 <!-- Desktop menu with all items -->
@@ -921,22 +924,14 @@
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-primary rounded flex items-center justify-center">
-                                <span class="text-neutral-dark inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
-                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-                                        <path
-                                            d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
-                                    </svg></span>
+                                <span class="text-neutral-dark inline-flex icon-mail"></span>
                             </div>
                             <span class="text-lg font-bold">chamu.pages@gmail.com</span>
                         </div>
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-12 h-12 bg-primary/10 rounded flex items-center justify-center border border-primary/30">
-                                <span class="text-primary inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
-                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-                                        <path
-                                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
-                                    </svg></span>
+                                <span class="text-primary inline-flex icon-code"></span>
                             </div>
                             <a href="https://github.com/chamu-pages" target="_blank" rel="noopener noreferrer"
                                 class="text-lg font-bold hover:text-primary transition-colors">github.com/chamu-pages</a>
@@ -946,11 +941,7 @@
                 <div id="form-success"
                     class="hidden h-full flex flex-col items-center justify-center text-center py-12 space-y-4">
                     <div class="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-emerald-500 text-3xl inline-flex"><svg xmlns="http://www.w3.org/2000/svg"
-                                height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor">
-                                <path
-                                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
-                            </svg></span>
+                        <span class="text-emerald-500 text-3xl inline-flex icon-check"></span>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Message Received!</h3>
                     <p class="text-white/60">I'll get back to you soon.</p>
@@ -1003,12 +994,15 @@
             <div class="border-t border-white/10 pt-12 flex flex-col items-center gap-6">
                 <div class="w-full flex flex-col md:flex-row justify-between items-center gap-4">
                     <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg overflow-hidden border-2 border-primary">
-                            <img src="assets/img/Chamu Pages  - Static Website Specialist.webp" alt="Logo"
-                                loading="lazy" class="w-full h-full object-cover" />
-                        </div>
-                        <span class="font-display font-800 text-sm tracking-tight uppercase italic">Chamu<span
-                                class="text-primary"> Pages</span></span>
+                        <a href="index.html" class="flex items-center gap-2 group">
+                            <div
+                                class="w-8 h-8 rounded-lg overflow-hidden border-2 border-primary group-hover:scale-105 transition-transform">
+                                <img src="assets/img/Chamu Pages  - Static Website Specialist.webp" alt="Logo"
+                                    loading="lazy" class="w-full h-full object-cover" />
+                            </div>
+                            <span class="font-display font-800 text-sm tracking-tight uppercase italic">Chamu<span
+                                    class="text-primary"> Pages</span></span>
+                        </a>
                     </div>
                     <div class="flex flex-col items-center md:items-end gap-2">
                         <div class="flex items-center gap-2">
@@ -1018,6 +1012,15 @@
                             <button id="edit-toggle"
                                 class="text-sm text-white/50 hover:text-primary transition-colors cursor-pointer"
                                 onclick="toggleEditMode()">See Magic</button>
+                            <span class="text-white/30">·</span>
+                            <a href="privacy.html"
+                                class="text-sm text-white/50 hover:text-primary transition-colors">Privacy</a>
+                            <span class="text-white/30">·</span>
+                            <a href="terms.html"
+                                class="text-sm text-white/50 hover:text-primary transition-colors">Terms</a>
+                            <span class="text-white/30">·</span>
+                            <a href="service-agreement.html"
+                                class="text-sm text-white/50 hover:text-primary transition-colors">Service</a>
                         </div>
                         <p class="text-sm text-white/80">© 2026 Chamu Pages. Built for speed.</p>
                     </div>
