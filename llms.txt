@@ -1,19 +1,31 @@
 # Chamu Pages - Static Website Specialist
 
 ## About
-High-performance portfolio website for Chamu Pages, specializing in building lightning-fast static websites for Western business owners. Focused on speed, SEO, and conversion optimization.
+High-performance portfolio website for Chamu Pages, specializing in building lightning-fast static websites for growth-focused businesses. Focused on extreme speed (100/100 Lighthouse), SEO, and high-conversion architecture.
 
 ## Services
 - Custom Static Website Development (HTML/CSS/JS)
-- Performance Optimization (100/100 Lighthouse Scores)
+- Performance & Conversion Optimization
 - SEO-Ready Architecture
 - Dark Mode & Responsive Design
 
 ## Key Features
-- Zero bloat, no heavy frameworks
-- Mobile-first approach
-- Interactive animations (GSAP, Canvas)
+- Zero bloat architecture (no heavy frameworks)
+- Centralized icon system (localized SVGs)
+- Interactive animations (GSAP, Warp Canvas)
+- Accessible & SEO-friendly markup
+
+## Site Structure
+- Home: https://chamu.pages.dev/
+- Privacy Policy: https://chamu.pages.dev/privacy.html
+- Terms of Use: https://chamu.pages.dev/terms.html
+- Service Agreement: https://chamu.pages.dev/service-agreement.html
+
+## Tech Stack
+- HTML5, Vanilla CSS, JavaScript, Alphine.js
+- Tailwind CSS (Static build)
+- Cloudflare Pages (Hosting)
 
 ## Contact
 - Email: chamu.pages@gmail.com
-- GitHub: https://github.com/chamudithalanka
+- GitHub: https://github.com/chamu-pages
