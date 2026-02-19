@@ -46,7 +46,6 @@ The visual language of Chamu Pages is strict and minimal.
 I operate as a specialist, not a generalist. I offer a single, streamlined package for service-based businesses, with modular add-ons for specific needs.
 
 ### The Base Package ($699)
-**No Meetings, No Fluff — Just Code.**
 
 A complete "Done-For-You" solution designed for speed and conversion.
 
@@ -83,7 +82,7 @@ To run this project locally, clone the repository and open it in your preferred 
 
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/chamu-pages.git](https://github.com/yourusername/chamu-pages.git)
+git clone [https://github.com/chamu-pages/portfolio.git](https://github.com/chamu-pages/portfolio.git)
 
 # Navigate to the directory
 cd chamu-pages
