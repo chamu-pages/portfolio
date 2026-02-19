@@ -1,10 +1,10 @@
-# Chamu Pages
+# 🟢 Chamu Pages
 
 ### High-Performance Static Web Studio
 
-This repository hosts the source code for Chamu Pages, my personal portfolio and agency website. It serves as a live demonstration of my core philosophy: websites should be instant, secure, and conversion-focused.
+This repository hosts the source code for Chamu Pages, my personal portfolio website. It serves as a live demonstration of my core philosophy: websites should be instant, secure, and conversion-focused.
 
-I specialize in replacing bloated WordPress sites with hand-coded, high-performance static architecture.
+I specialize in replacing bloated heave sites with high-performance static architecture.
 
 ## The Philosophy
 
@@ -43,16 +43,39 @@ The visual language of Chamu Pages is strict and minimal.
 
 ## Services Offered
 
-I operate as a specialist, not a generalist. I offer a single, productized service package designed for service-based businesses.
+I operate as a specialist, not a generalist. I offer a single, streamlined package for service-based businesses, with modular add-ons for specific needs.
 
-### The Static Standard Package ($699)
-A complete "Done-For-You" solution that includes:
+### The Base Package ($699)
+**No Meetings, No Fluff — Just Code.**
 
-* **Design & Development:** 5-page static website hand-coded for performance.
-* **Content Strategy:** Professional layout and copywriting setup.
-* **Performance:** Guaranteed 90+ Google Lighthouse Speed Score.
-* **SEO Foundation:** Schema markup, meta tags, and sitemap generation.
-* **Hosting Setup:** Zero monthly maintenance fees via Cloudflare.
+A complete "Done-For-You" solution designed for speed and conversion.
+
+* **Scope:** Up to 5 pages.
+* **Visuals:** Includes stock photos or your provided assets.
+* **Refinement:** 3 rounds of revisions to ensure perfection.
+* **Features:**
+    * Functional Email Contact Form.
+    * WhatsApp Chat Link.
+    * Google Map & YouTube Embeds.
+* **Performance & Infrastructure:**
+    * Cloudflare Hosting Setup.
+    * Advanced Technical SEO & Schema Markup.
+
+### Modular Add-Ons
+Expand functionality only if you need it.
+
+| Feature | Price |
+| :--- | :--- |
+| **CMS Integration** (Manage your own content) | $399 |
+| **Booking System** | $199 |
+| **Payment Gateway Integration** | $149 |
+| **Newsletter Setup** | $149 |
+| **Privacy-First Analytics Setup** | $129 |
+| **Live Chat Widget** | $99 |
+| **Custom AI Image Pack** | $100 / pack |
+| **Additional Pages** | $120 |
+| **CRM / Database Integration** | Starts at $499 |
+| **Migration to Generic Host** (Non-Cloudflare) | $250 |
 
 ## Local Development
 
