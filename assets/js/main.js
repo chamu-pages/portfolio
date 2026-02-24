@@ -225,6 +225,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Portfolio Card Mobile Tap Trigger
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    portfolioCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Check if we tapped a link inside the card
+            if (e.target.closest('a')) return;
+
+            // Only toggle on touch devices (where hover isn't supported)
+            if (window.matchMedia('(hover: none)').matches) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const isTapped = card.classList.contains('is-tapped');
+
+                // Clear other cards first
+                portfolioCards.forEach(c => c.classList.remove('is-tapped'));
+
+                // Toggle current
+                if (!isTapped) {
+                    card.classList.add('is-tapped');
+                }
+            }
+        });
+    });
+
+    // Close overlays when tapping outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.portfolio-card')) {
+            portfolioCards.forEach(card => card.classList.remove('is-tapped'));
+        }
+    });
+
     // Contact Form AJAX Handling
     const form = document.getElementById('contact-form');
     const successMessage = document.getElementById('form-success');
